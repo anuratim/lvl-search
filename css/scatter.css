@@ -1,0 +1,52 @@
+body {
+	font: 16px;
+  	font-family: 'PT Sans', sans-serif;
+}
+
+#scatter {
+	background-color: #FFF;
+	padding: 0px 0px 0px 0px;
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  position: absolute;
+  width: 275px;
+  height: 50px;
+  background-color: #E0E0E0;
+  pointer-events: none;
+  padding: 10px 10px 10px 5px;
+}
+
+#scatterText {
+	background-color: #E0E0E0;
+	text-align: left;
+	padding: 10px 0px 10px 10px;
+	font-size: 20px;
+}
+
+img {
+	height: 80%;
+	width: auto;
+	position: absolute;
+	margin-left: 25%;
+	margin-top: 8%;
+}
+
+#pillPic {
+	padding: 0 0 0 2px;
+	background-color: #E0E0E0;
+	height: 48px;
+	min-width: 60px;
+}

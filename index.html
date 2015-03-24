@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+  <!--CSS libs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.2/jquery.tipsy.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/typeaheadjs.css">
+
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <!--/CSS Libs-->
+
+
+  <!--CSS source-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--/CSS source-->
+
+  <!--JS libs-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.2/jquery.tipsy.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/dist/typeahead.bundle.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
+
+  <!--/JS libs-->
+
+  <!-- JS source-->
+  <script src="main.js"></script>
+  <!--/JS source-->
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="textcontent">
+          <div class = "search-group">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              <div id ="scrollable-dropdown-menu">
+                <input class="form-control input-lg typeahead" type="text" placeholder="Provider name">
+               </div>
+          </div>
+
+        <div class="showDataRow">
+          <div class="row" id="infobox">
+              <div class="text-group">
+                <div>Name:</div>
+                <span id="fullName"></span>
+              </div>
+              <div class="text-group">
+                <div>Specialty:</div>
+                <span id="specialty"></span>
+              </div>
+              <div class="text-group">
+                <div>NPI:</div>
+                <span id="npi"></span>
+              </div>
+              <div class="text-group">
+                <div>Address:</div>
+                <span id="address"></span>
+              </div>  
+              <div class="text-group">
+                <div>Zip code:</div>
+                <span id="streetZip"></span>
+              </div> 
+               <div class="text-group">
+                <div>Phone #:</div>
+                <span id="streetPhone"></span>
+              </div> 
+              <div class="text-group">
+                <div>Email address:</div>
+                <span id="email"></span>
+                <span class="input-group-button">
+                  <button id="clickcopy" type="button" class="btn btn-default btn-md" data-clipboard-target="email" title="click to copy" data-copied-hint="copied!">
+                    <span class="glyphicon glyphicon-copy"></span>
+                  </button>
+                </span>
+              </div> 
+              <div class="text-group">
+                <div>License #:</div>
+                <span id="licenseNum"></span>
+              </div> 
+              <div class="text-group">
+                <div>License state:</div>
+                <span id="licenseState"></span>
+              </div> 
+          </div>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>
